@@ -1,0 +1,9 @@
+{
+    "require": {
+        "symfony/console": "^6.3",
+        "twig/twig": "^3.7",
+        "php": "*",
+        "symfony/asset": "^6.3",
+        "doctrine/doctrine-bundle": "*"
+    }
+}
