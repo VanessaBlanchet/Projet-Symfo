@@ -5,5 +5,8 @@
         "php": "*",
         "symfony/asset": "^6.3",
         "doctrine/doctrine-bundle": "*"
+    },
+    "require-dev": {
+        "symfony/maker-bundle": "^1.51"
     }
 }
