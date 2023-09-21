@@ -28,28 +28,28 @@ app_console_delete:
     controller: App\Controller\ConsoleController::delete
     methods: [DELETE]
 
-# Routes for JeuxVideosController
-app_jeuxvideos_index:
-    path: /jeux-videos
-    controller: App\Controller\JeuxVideosController::index
+# Routes for VideoGamesController
+app_video_games_index:
+    path: /video_games
+    controller: App\Controller\VideoGamesController::index
     methods: [GET]
 
-app_jeuxvideos_new:
-    path: /jeux-videos/new
-    controller: App\Controller\JeuxVideosController::new
+app_video_games_new:
+    path: /video_games/new
+    controller: App\Controller\VideoGamesController::new
     methods: [GET, POST]
 
-app_jeuxvideos_edit:
-    path: /jeux-videos/{id}/edit
-    controller: App\Controller\JeuxVideosController::edit
+app_video_games_edit:
+    path: /video_games/{id}/edit
+    controller: App\Controller\VideoGamesController::edit
     methods: [GET, POST]
 
-app_jeuxvideos_show:
-    path: /jeux-videos/{id}
-    controller: App\Controller\JeuxVideosController::show
+app_video_games_show:
+    path: /video_games/{id}
+    controller: App\Controller\VideoGamesController::show
     methods: [GET]
 
-app_jeuxvideos_delete:
-    path: /jeux-videos/{id}
-    controller: App\Controller\JeuxVideosController::delete
-    methods: [DELETE]
+app_video_games_delete:
+    path: /video_games/{id}
+    controller: App\Controller\VideoGamesController::delete
+    methods: [POST]

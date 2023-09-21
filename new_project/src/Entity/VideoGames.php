@@ -29,7 +29,7 @@ class VideoGames
     #[ORM\ManyToOne(inversedBy: 'videoGames')]
     private ?Console $Console = null;
 
-    #[ORM\ManyToOne(inversedBy: 'games')]
+    #[ORM\ManyToOne(inversedBy: 'videoGames')]
     #[ORM\JoinColumn(nullable: false)]
     private ?Console $console = null;
 

@@ -31,6 +31,14 @@ class Console
     #[ORM\OneToMany(mappedBy: 'console', targetEntity: VideoGames::class)]
     private Collection $games;
 
+//! ATTENTION BOUT DE CODE ISSU DE CHAT GPT  A MODIFIER
+    public function __toString()
+    {
+        return $this->name;
+    }
+
+//! FIN DU BOUT DE CODE ISSU DE CHAT GPT  A MODIFIER
+
     public function __construct()
     {
         $this->videoGames = new ArrayCollection();

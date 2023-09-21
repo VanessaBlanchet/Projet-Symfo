@@ -16,7 +16,6 @@ class VideoGamesType extends AbstractType
             ->add('genre')
             ->add('release_date')
             ->add('picture')
-            ->add('Console')
             ->add('console')
         ;
     }
