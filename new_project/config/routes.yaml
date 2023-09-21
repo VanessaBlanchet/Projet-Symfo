@@ -1,3 +1,55 @@
 adminer:
     path: /adminer
     controller: App\Controller\AdminerController::index
+
+# Routes for ConsoleController
+app_console_index:
+    path: /console
+    controller: App\Controller\ConsoleController::index
+    methods: [GET]
+
+app_console_new:
+    path: /console/new
+    controller: App\Controller\ConsoleController::new
+    methods: [GET, POST]
+
+app_console_edit:
+    path: /console/{id}/edit
+    controller: App\Controller\ConsoleController::edit
+    methods: [GET, POST]
+
+app_console_show:
+    path: /console/{id}
+    controller: App\Controller\ConsoleController::show
+    methods: [GET]
+
+app_console_delete:
+    path: /console/{id}
+    controller: App\Controller\ConsoleController::delete
+    methods: [DELETE]
+
+# Routes for JeuxVideosController
+app_jeuxvideos_index:
+    path: /jeux-videos
+    controller: App\Controller\JeuxVideosController::index
+    methods: [GET]
+
+app_jeuxvideos_new:
+    path: /jeux-videos/new
+    controller: App\Controller\JeuxVideosController::new
+    methods: [GET, POST]
+
+app_jeuxvideos_edit:
+    path: /jeux-videos/{id}/edit
+    controller: App\Controller\JeuxVideosController::edit
+    methods: [GET, POST]
+
+app_jeuxvideos_show:
+    path: /jeux-videos/{id}
+    controller: App\Controller\JeuxVideosController::show
+    methods: [GET]
+
+app_jeuxvideos_delete:
+    path: /jeux-videos/{id}
+    controller: App\Controller\JeuxVideosController::delete
+    methods: [DELETE]
