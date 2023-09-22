@@ -2,6 +2,13 @@ adminer:
     path: /adminer
     controller: App\Controller\AdminerController::index
 
+# Routes for Home
+
+app_home:
+    path: /
+    controller: App\Controller\HomeController::index
+    methods: [GET]
+
 # Routes for ConsoleController
 app_console_index:
     path: /console
